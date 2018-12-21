@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AriSwift'
-  s.version          = '4'
+  s.version          = '5'
   s.summary          = '分类工具库'
   s.swift_version    = '4.2'
 # This description is used to generate tags and improve search results.
