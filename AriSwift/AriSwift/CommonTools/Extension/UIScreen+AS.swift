@@ -55,7 +55,7 @@ public extension AriSwift where Base: UIScreen {
         return (isX || isXR || isXMax) ? 88 : 64
     }
     /// tabBar heihgt
-    public static var tavBarHeight: CGFloat {
+    public static var tabBarHeight: CGFloat {
         return (isX || isXR || isXMax) ? 83 : 49
     }
     

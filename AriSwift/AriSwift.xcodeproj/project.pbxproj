@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A34402C521E592DC009F9F34 /* Date+AS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34402C421E592DC009F9F34 /* Date+AS.swift */; };
+		A34402CA21E5A29A009F9F34 /* String+AS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34402C921E5A29A009F9F34 /* String+AS.swift */; };
 		A34CF2A321CCBA4600D1FC99 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34CF2A221CCBA4600D1FC99 /* UIViewController+Alert.swift */; };
 		A34CF2A521CCBA6F00D1FC99 /* UILabel+AS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34CF2A421CCBA6F00D1FC99 /* UILabel+AS.swift */; };
 		EAAF0D1721461699007B2BA1 /* UIView+AS_Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF0D1621461699007B2BA1 /* UIView+AS_Frame.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A34402C421E592DC009F9F34 /* Date+AS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+AS.swift"; sourceTree = "<group>"; };
+		A34402C921E5A29A009F9F34 /* String+AS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AS.swift"; sourceTree = "<group>"; };
 		A34CF2A221CCBA4600D1FC99 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		A34CF2A421CCBA6F00D1FC99 /* UILabel+AS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+AS.swift"; sourceTree = "<group>"; };
 		EAAF0D1621461699007B2BA1 /* UIView+AS_Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AS_Frame.swift"; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				EAAF0D2621464714007B2BA1 /* FileManager+AS.swift */,
 				EAD5472D216B50F5002A567E /* UIDevice+AS.swift */,
 				EAD03F3121A2584600315F6C /* String+MD5.swift */,
+				A34402C421E592DC009F9F34 /* Date+AS.swift */,
+				A34402C921E5A29A009F9F34 /* String+AS.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EADF94302138E6F800E00D43 /* ViewController.swift in Sources */,
+				A34402C521E592DC009F9F34 /* Date+AS.swift in Sources */,
 				EAD03F3E21A287CA00315F6C /* UIApplication+AS.swift in Sources */,
 				EADF942E2138E6F800E00D43 /* AppDelegate.swift in Sources */,
 				A34CF2A321CCBA4600D1FC99 /* UIViewController+Alert.swift in Sources */,
@@ -212,6 +219,7 @@
 				EADF94412138E74300E00D43 /* AriSwift.swift in Sources */,
 				EAAF0D1721461699007B2BA1 /* UIView+AS_Frame.swift in Sources */,
 				EAD03F4321A28AFA00315F6C /* NibLoadable.swift in Sources */,
+				A34402CA21E5A29A009F9F34 /* String+AS.swift in Sources */,
 				EAD03F3221A2584600315F6C /* String+MD5.swift in Sources */,
 				EAD5472E216B50F5002A567E /* UIDevice+AS.swift in Sources */,
 				EAAF0D1F21463ACE007B2BA1 /* Cell+AS.swift in Sources */,

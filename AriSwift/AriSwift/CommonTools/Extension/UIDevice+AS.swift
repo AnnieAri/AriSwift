@@ -41,6 +41,9 @@ public extension AriSwift where Base: UIDevice {
         uname(&systemInfo)
         let mirror = Mirror(reflecting: systemInfo.machine)
         let type = mirror.children.map {String(UnicodeScalar(UInt8( $0.value as! Int8)))}.joined()
+        #if DEBUG
+        return "iPhone11,8"
+        #endif
         return type
     }
     static var deviceType: DeviceType {

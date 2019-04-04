@@ -51,8 +51,8 @@ public extension AriSwift where Base : UIViewController {
         label.numberOfLines = 0
         label.text = message
 //        label.preferredMaxLayoutWidth = UIScreen.as.width * 0.7
-      
-        label.frame = CGRect(x: 0, y: 0, width: UIScreen.as.width * 0.7, height: UILabel.as.calculateLabelHeight(with: message ?? ""))
+        let labelSize = UILabel.as.calculateLabelSize(with: message ?? "")
+        label.frame = CGRect(x: 0, y: 0, width: labelSize.width, height: labelSize.height)
         
 //        label.sizeToFit()
         var bgView = UIView(frame: CGRect(x: 0, y: 0, width: label.bounds.width+20, height: label.bounds.height+20))

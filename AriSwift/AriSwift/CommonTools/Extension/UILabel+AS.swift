@@ -13,7 +13,7 @@
 // 
 
 import UIKit
-extension AriSwift where Base: UILabel {
+public extension AriSwift where Base: UILabel {
     
     /// 计算label的高度
     /// NSString的 boundingRect(with: , options: , attributes: , context: )方法
@@ -26,7 +26,7 @@ extension AriSwift where Base: UILabel {
     ///   - fontSize: 字体大小
     ///   - width: 最大宽度
     /// - Returns: 计算后的label高度
-    static func calculateLabelHeight(with text: String,fontSize: CGFloat = 16, width: CGFloat = UIScreen.as.width * 0.7) -> CGFloat {
+    static func calculateLabelSize(with text: String,fontSize: CGFloat = 16, width: CGFloat = UIScreen.as.width * 0.7) -> CGSize {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 10000, height: 1000))
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: fontSize)
@@ -35,13 +35,13 @@ extension AriSwift where Base: UILabel {
         view.addSubview(label)
         view.translatesAutoresizingMaskIntoConstraints = false
         label.translatesAutoresizingMaskIntoConstraints = false
-        let widthC = NSLayoutConstraint(item: label, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: width)
+        let widthC = NSLayoutConstraint(item: label, attribute: .width, relatedBy: .lessThanOrEqual, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: width)
         let centerX = NSLayoutConstraint(item: label, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
         let centerY = NSLayoutConstraint(item: label, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
         label.addConstraint(widthC)
         view.addConstraints([centerX,centerY])
         view.layoutIfNeeded()
-        return label.frame.height
+        return label.frame.size
         
     }
 }
